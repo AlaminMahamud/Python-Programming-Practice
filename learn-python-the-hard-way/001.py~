@@ -1,0 +1,9 @@
+my_name = 'Alamin Mahamud'
+my_age  = 23 # Not a Lie
+my_height = 65 #inches
+my_weight = 140 #lbs
+my_eyes = 'Black'
+my_teeth = 'Yellow'
+my_hair = 'Black'
+
+print('Let\'s talk about %s' % my_name)

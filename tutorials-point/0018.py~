@@ -1,0 +1,4 @@
+Money
+def myfunc():
+    return
+myfunc()
