@@ -1,14 +1,18 @@
-import random
-
-messages = [
-    'It is certain',
-    'It is decidedly so',
-    'Reply hazy try again',
-    'Ask again later',
-    'Concentrate and ask again',
-    'My reply is no',
-    'Outlook not so good',
-    'very doubtfull'
+grid = [
+    ['.', '.', '.', '.', '.', '.'],
+    ['.', 'O', 'O', '.', '.', '.'],
+    ['O', 'O', 'O', 'O', '.', '.'],
+    ['O', 'O', 'O', 'O', 'O', '.'],
+    ['.', 'O', 'O', 'O', 'O', 'O'],
+    ['O', 'O', 'O', 'O', 'O', '.'],
+    ['O', 'O', 'O', 'O', '.', '.'],
+    ['.', 'O', 'O', '.', '.', '.'],
+    ['.', '.', '.', '.', '.', '.']
 ]
 
-print(messages[random.randint(0, len(messages) - 1)])
+str = ''
+for j in range(6):
+    for i in grid:
+        str += i[j]
+
+print(str+'.')
