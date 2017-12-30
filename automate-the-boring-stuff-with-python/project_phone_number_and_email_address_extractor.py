@@ -22,7 +22,13 @@ phone_regex = re.compile(r'''(
   (\s*(ext|x|ext.)\s*(\d{2,5}))?
 )''', re.VERBOSE)
 
-# TODO: Create Email Regex
+email_regex = re.compile(r'''(
+  ([a-zA-Z0-9._%+-]+) # username
+  @                   # @ symbol
+  ([a-zA-Z0-9.-]+)    # domain name
+  (\.[a-zA-Z]{2,})    # dot-something
+)''', re.VERBOSE)
+
 # TODO: Find Matches in clipboard text.
 # TODO: Copy results to the clipboard
 
